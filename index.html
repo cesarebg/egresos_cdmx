@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script src="science.v1.js"></script>
+  <script src="https://unpkg.com/d3-regression@1.2.4/dist/d3-regression.min.js"></script>
+  <style>
+    body {
+      font: 10px sans-serif;
+      background: rgb(241, 241, 241);
+    }
+
+    .axis path,
+    .axis line {
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+    }
+
+    .point {
+      fill: red;
+      opacity: 0.3;
+      /* stroke: #000; */
+    }
+
+    .point-2 {
+      fill: steelblue;
+      opacity: 0.3;
+      /* stroke: #000; */
+    }
+
+    .point-3 {
+      fill: green;
+      opacity: 0.3;
+      /* stroke: #000; */
+    }
+
+    .point-4 {
+      fill: orange;
+      /* stroke: #000; */
+      opacity: 0.3;
+    }
+
+    .point-5 {
+      fill: purple;
+      /* stroke: #000; */
+      opacity: 0.3;
+    }
+
+    .point-6 {
+      fill: black;
+      /* stroke: #000; */
+      opacity: 0.3;
+    }
+
+    .point-7 {
+      fill: brown;
+      /* stroke: #000; */
+      opacity: 0.3;
+    }
+
+    .point-8 {
+      fill: pink;
+      /* stroke: #000; */
+      opacity: 0.3;
+    }
+
+    .line_e {
+      fill: none;
+      stroke: red;
+      stroke-width: 4;
+    }
+
+    .line_c {
+      fill: none;
+      stroke: steelblue;
+      stroke-width: 4;
+    }
+
+    .line_a {
+      fill: none;
+      stroke: green;
+      stroke-width: 4;
+    }
+
+    .line_o {
+      fill: none;
+      stroke: orange;
+      stroke-width: 4;
+    }
+
+    .line_co {
+      fill: none;
+      stroke: purple;
+      stroke-width: 4;
+    }
+
+    .line_li {
+      fill: none;
+      stroke: black;
+      stroke-width: 4;
+    }
+
+    .line_re {
+      fill: none;
+      stroke: brown;
+      stroke-width: 4;
+    }
+
+    .line_ta {
+      fill: none;
+      stroke: pink;
+      stroke-width: 4;
+    }
+
+    .tooltip {
+      font-size: 15px;
+      font-family: monospace;
+      height: 17px;
+      width: 100px;
+      overflow: hidden;
+      clear: both;
+      border-style: solid;
+      border-width: 2px;
+      background-color: white;
+      text-align: center
+
+    }
+
+    .tooltip_p {
+      font-size: 10px;
+      font-family: monospace;
+      height: 50px;
+      width: 70px;
+      border-style: solid;
+      border-width: 2px;
+      background-color: white;
+      text-align: center
+
+    }
+
+
+header {
+  margin: 10px 15px;
+  padding: 10px 15px;
+  font-size: 48px;
+  font-family: 'Merriweather';
+  font-style: black;
+  font-weight: 1000;
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(226, 226, 226);
+}
+
+div.explainer {
+  margin: 10px 15px;
+  padding: 10px 15px;
+  display: block;
+  align-content: center;
+  font-size: 16px;
+  font-family: 'Merriweather';
+  font-style: black;
+  font-weight: 1000;
+}
+
+  </style>
+  <title>Estadísticas sistema penitenciario</title>
+</head>
+
+<body>
+
+  <header>Estadísticas de los egresos en el sistema penitenciario de la CDMX</header>
+<div class="explainer">Este proyecto muestra la fecha y la cantidad de egresos,<br>del sistema penitenciario y la curva muestra un ajuste LOESS</div>
+
+</body>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<!-- <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script> -->
+<!-- <script src="index.js"></script> -->
+<script src="loess.js" charset="utf-8"></script>
+
+<script src="scatterplot-2.js"></script>
+
+<!-- <script src="scatterplot.js"></script> -->
+</html>
